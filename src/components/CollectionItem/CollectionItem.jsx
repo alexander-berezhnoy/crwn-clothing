@@ -2,9 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cartActions";
 import CustomButton from "../CustomButton/CustomButton";
-import "./PreviewItem.scss";
+import "./CollectionItem.scss";
 
-const PreviewItem = ({ item, addItem }) => {
+const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
   return (
     <div className="collection-item">
@@ -28,4 +28,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   null,
   mapDispatchToProps
-)(PreviewItem);
+)(CollectionItem);
