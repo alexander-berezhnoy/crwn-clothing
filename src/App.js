@@ -30,9 +30,9 @@ class App extends React.Component {
             ...snapShot.data()
           });
         });
-      } else {
-        setCurrentUser(userAuth);
-      }
+      } //else {
+      setCurrentUser(userAuth);
+      //}
     });
   }
 
@@ -42,7 +42,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -56,7 +56,7 @@ class App extends React.Component {
             }
           />
         </Switch>
-      </>
+      </div>
     );
   }
 }
