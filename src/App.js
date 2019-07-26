@@ -11,7 +11,6 @@ import SignPage from "./pages/SignPage/SignPage";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 
 import Header from "./components/Header/Header";
-import { setCurrentUser } from "./redux/user/userActions";
 import { selectCurrentUser } from "./redux/user/userSelector";
 
 class App extends React.Component {
@@ -48,11 +47,4 @@ const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
 });
 
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps)(App);
