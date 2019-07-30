@@ -7,6 +7,10 @@ const shrinkLabelStyles = css`
   top: -14px;
   font-size: 12px;
   color: ${mainColor};
+
+  @media screen and (max-width: 576px) {
+    top: -10px;
+  }
 `;
 
 export const GroupContainer = styled.div`
@@ -15,6 +19,14 @@ export const GroupContainer = styled.div`
 
   input[type="password"] {
     letter-spacing: 0.3em;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 35px 0;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 25px 0;
   }
 `;
 

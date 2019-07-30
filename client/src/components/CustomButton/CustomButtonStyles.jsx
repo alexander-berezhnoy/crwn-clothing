@@ -66,5 +66,26 @@ export const CustomButtonContainer = styled.button`
     border: 1px solid black;
   }
 
+  @media screen and (max-width: 800px) {
+    min-width: unset;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px 0 30px;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 70%;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 70%;
+    line-height: 15px;
+    padding: 5px 30px;
+  }
+
   ${getButtonStyles}
 `;

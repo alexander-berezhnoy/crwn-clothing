@@ -30,3 +30,14 @@ export const CartItemsContainer = styled.div`
 export const CartDropdownButton = styled(CustomButton)`
   margin-top: auto;
 `;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
