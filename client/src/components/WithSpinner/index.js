@@ -1,1 +1,1 @@
-export { default } from "./WithSpinner";
+export { withSpinner } from "./withSpinner.jsx";

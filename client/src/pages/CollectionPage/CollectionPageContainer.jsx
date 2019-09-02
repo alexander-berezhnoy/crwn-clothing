@@ -3,7 +3,7 @@ import { createStructuredSelector } from "reselect";
 import { compose } from "redux";
 
 import { selectIsCollectionsLoaded } from "../../redux/shop/shopSelectors";
-import { withSpinner } from "../../components/WithSpinner";
+import { withSpinner } from "../../components/withSpinner";
 import CollectionPage from "./CollectionPage";
 
 const mapStateToProps = createStructuredSelector({
