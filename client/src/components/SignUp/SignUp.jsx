@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 
-import FormInput from "../FormInput/FormInput";
-import CustomButton from "../CustomButton/CustomButton";
+import FormInput from "../FormInput";
+import CustomButton from "../CustomButton";
 
 import { SignUpContainer, SignUpTitle, ButtonsContainer } from "./SignUpStyles";
 

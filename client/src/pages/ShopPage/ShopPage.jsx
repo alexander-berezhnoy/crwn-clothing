@@ -2,15 +2,13 @@ import React, { useEffect, lazy, Suspense } from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "../../components/Spinner";
 
 import { fetchCollectionsStart } from "../../redux/shop/shopActions";
 
-const CollectionPageContainer = lazy(() =>
-  import("../CollectionPage/CollectionPageContainer")
-);
+const CollectionPageContainer = lazy(() => import("../CollectionPage"));
 const CollectionsOverviewContainer = lazy(() =>
-  import("../../components/CollectionsOverview/CollectionsOverviewContainer")
+  import("../../components/CollectionsOverview")
 );
 
 const ShopPage = ({ match, fetchCollectionsStart }) => {

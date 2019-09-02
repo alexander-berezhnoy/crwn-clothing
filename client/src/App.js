@@ -5,16 +5,16 @@ import { createStructuredSelector } from "reselect";
 
 import { GlobalStyle } from "./globalStyles";
 
-import Header from "./components/Header/Header";
-import Spinner from "./components/Spinner/Spinner";
+import Header from "./components/Header";
+import Spinner from "./components/Spinner";
 
 import { selectCurrentUser } from "./redux/user/userSelector";
 import { checkUserSession } from "./redux/user/userActions";
 
-const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-const ShopPage = lazy(() => import("./pages/ShopPage/ShopPage"));
-const SignPage = lazy(() => import("./pages/SignPage/SignPage"));
-const CheckoutPage = lazy(() => import("./pages/CheckoutPage/CheckoutPage"));
+const HomePage = lazy(() => import("./pages/HomePage"));
+const ShopPage = lazy(() => import("./pages/ShopPage"));
+const SignPage = lazy(() => import("./pages/SignPage"));
+const CheckoutPage = lazy(() => import("./pages/CheckoutPage"));
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
