@@ -1,1 +1,1 @@
-export { default } from "./CollectionPageContainer.jsx";
+export { default } from "./CollectionPageContainer";

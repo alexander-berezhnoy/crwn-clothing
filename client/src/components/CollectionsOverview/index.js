@@ -1,1 +1,1 @@
-export { default } from "./CollectionsOverviewContainer.jsx";
+export { default } from "./CollectionsOverviewContainer";
